@@ -2,11 +2,84 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Главная</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+      </a>
+      <nav class="site-navigation">
+        <button class="site-navigation__button" type="button">Показать меню</button>
+      </nav>
+    </header>
+    <main class="page-main">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <section class="overview">
+        <h1 class="overview__title page-title">Милые штуки ручной работы для дома</h1>
+        <a class="overview__link overview__link--luster" href="#">Предметы интерьера</a>
+        <a class="overview__link overview__link--toys" href="#">Детские игрушки</a>
+      </section>
 
+      <section class="best-goods">
+        <h2 class="best-goods__title">Вязаные корзины</h2>
+        <h3 class="best-goods__label">Товар недели</h3>
+        <p class="best-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="best-goods__table">
+          <tr>
+            <td class="best-goods__specification">Цвет:</td>
+            <td class="best-goods__specification">"Тифани"/серый</td>
+          </tr>
+          <tr>
+            <td class="best-goods__specification">Диаметр:</td>
+            <td class="best-goods__specification">25 см</td>
+          </tr>
+          <tr>
+            <td class="best-goods__specification">Высота:</td>
+            <td class="best-goods__specification">15 см</td>
+          </tr>
+        </table>
+        <img class="best-goods__image" src="http://placehold.it/260x315" width="260" height="315" alt="Картинка вязаных корзинок">
+        <p class="best-goods__price">Цена: 990 руб.</p>
+        <a class="button best-goods__button" href="#">Заказать</a>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-us__title">Коротко о нас</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
+          <li class="about-us__item about-us__item--money">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item about-us__item--clew">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+
+      <div class="footer-social">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social__link--instagram" href="#"><span class="visually-hidden">Мы в инстраграмме</span></a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social__link--facebook" href="#"><span class="visually-hidden">Мы на фейсбуке</span></a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social__link--twitter" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright">
+        <span class="footer-copyright__text">Разработано</span>
+        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="footer-copyright__image" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
