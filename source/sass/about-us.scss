@@ -1,0 +1,24 @@
+.about-us {
+  padding-top: 35px;
+  margin-bottom: 60px;
+}
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.about-us__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+.about-us__item {
+  margin-bottom: 85px;
+
+  line-height: 30px;
+  font-weight: 700;
+}
+.about-us__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
