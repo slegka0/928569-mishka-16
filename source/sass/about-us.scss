@@ -8,17 +8,17 @@
   font-weight: 700;
 }
 .about-us__list {
-  padding: 0;
-  margin: 0;
-
+  @include kill-indents();
   list-style: none;
 }
 .about-us__item {
+  @include kill-indents();
   margin-bottom: 85px;
 
   line-height: 30px;
   font-weight: 700;
-}
-.about-us__item:nth-last-child(1) {
-  margin-bottom: 0;
+
+  &--last-child {
+   margin-bottom: 0;
+  }
 }

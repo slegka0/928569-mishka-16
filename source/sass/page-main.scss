@@ -1,7 +1,6 @@
 
 .page-main__title {
-  padding: 0;
-  margin: 0;
+  @include kill-indents();
 
   font-size: 27px;
   line-height: 30px;

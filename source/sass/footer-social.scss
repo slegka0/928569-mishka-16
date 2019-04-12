@@ -4,19 +4,16 @@
   align-items: center;
   align-content: center;
 
-  padding: 0;
-  margin: 0;
-
+  @include kill-indents();
   list-style: none;
 }
 .footer-social__item {
-  padding: 0;
-  margin: 0;
-
+  @include kill-indents();
   margin-right: 41px;
-}
-.footer-social__item:nth-last-child(1) {
-  margin-right: 0;
+
+  &--last-child {
+    margin-right: 0;
+  }
 }
 .footer-social__link {
   display: block;
@@ -38,5 +35,4 @@
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
   }
-
 }

@@ -10,15 +10,13 @@
   background-repeat: no-repeat;
 }
 .overview__title {
-  padding: 0;
-  margin: 0;
+  @include kill-indents();
 
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
 }
-
 .overview__link {
   display: block;
   padding: 30px;
@@ -29,7 +27,6 @@
   text-decoration: none;
 
   background-repeat: no-repeat;
-
 
   &--luster {
     background-color: #63d1bb;

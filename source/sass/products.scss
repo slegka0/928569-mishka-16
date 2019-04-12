@@ -3,18 +3,18 @@
   margin-bottom: 30px;
 }
 .products__list {
-  padding: 0;
-  margin: 0;
+  @include kill-indents();
 
   list-style: none;
 }
 .products__item {
-  padding: 0;
-  margin: 0;
+  @include kill-indents();
   margin-bottom: 30px;
 }
-.products__item:nth-last-child(1) {
-  margin-bottom: 0;
+.products__item {
+  &--last-child {
+    margin-bottom: 0;
+  }
 }
 .products__name {
   font-weight: 700;
@@ -25,7 +25,7 @@
 .products__description {
   font-size: 13px;
   line-height: 30px;
-  color: #444444;
+  color: $dark-gray;
 }
 .products__price {
   font-size: 15px;
