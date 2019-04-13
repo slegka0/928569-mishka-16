@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
       <nav class="site-navigation">
         <button class="site-navigation__button" type="button">Показать меню</button>
@@ -16,7 +19,9 @@
     <main class="page-main">
 
       <section class="overview">
-        <h1 class="overview__title page-title">Милые штуки ручной работы для дома</h1>
+        <div class="overview__wrapper">
+          <h1 class="overview__title">Милые штуки ручной работы для дома </h1>
+        </div>
         <a class="overview__link overview__link--luster" href="#">Предметы интерьера</a>
         <a class="overview__link overview__link--toys" href="#">Детские игрушки</a>
       </section>
@@ -39,7 +44,8 @@
             <td class="best-goods__specification">15 см</td>
           </tr>
         </table>
-        <img class="best-goods__image" src="http://placehold.it/260x315" width="260" height="315" alt="Картинка вязаных корзинок">
+
+        <img class="best-goods__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Картинка вязаных корзинок">
         <p class="best-goods__price">Цена: 990 руб.</p>
         <a class="button best-goods__button" href="#">Заказать</a>
       </section>
@@ -68,16 +74,16 @@
           <li class="footer-social__item">
             <a class="footer-social__link footer-social__link--facebook" href="#"><span class="visually-hidden">Мы на фейсбуке</span></a>
           </li>
-          <li class="footer-social__item">
+          <li class="footer-social__item footer-social__item--last-child">
             <a class="footer-social__link footer-social__link--twitter" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
           </li>
         </ul>
       </div>
 
-      <div class="footer-copyright">
-        <span class="footer-copyright__text">Разработано</span>
-        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="footer-copyright__image" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+      <div class="page-footer__wrapper">
+        <span class="page-footer__developed">Разработано</span>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

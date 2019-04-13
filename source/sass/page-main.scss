@@ -1,0 +1,12 @@
+
+.page-main__title {
+  @include kill-indents();
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+
+  padding: 75px 0;
+  background-color: #f1f1f1;
+}

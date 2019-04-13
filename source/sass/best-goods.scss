@@ -1,0 +1,46 @@
+.best-goods {
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  color: $dark-gray;
+}
+.best-goods__title {
+  @include kill-indents();
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.best-goods__label {
+  @include kill-indents();
+
+  line-height: 20px;
+  font-weight: 700;
+  color: #63d1bb;
+}
+.best-goods__description {
+  font-size: 15px;
+}
+.best-goods__table {
+  margin-bottom: 30px;
+}
+.best-goods__specification {
+  padding: 15px 0;
+
+  font-size: 15px;
+  line-height: 20px;
+}
+.best-goods__image {
+  margin-bottom: 30px;
+}
+.best-goods__price {
+  @include kill-indents();
+  margin-bottom: 27px;
+
+  font-weight: 700;
+  text-align: center;
+}
+.best-goods__button {
+  margin: 0 auto;
+}
