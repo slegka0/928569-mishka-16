@@ -1,8 +1,17 @@
 .page-header {
-  display: flex;
-
-  box-shadow: inset 0 1px 0 0 #ececec, 0 1px 0 0 #ececec;
+  width: 320px;
+  margin: 0 auto;
 }
-.page-header__logo {
-  margin: 22px 0px 22px 86px;
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: 1050px;
+  }
 }

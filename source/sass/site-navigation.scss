@@ -1,0 +1,123 @@
+.site-navigation__top-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  box-shadow: inset 0 1px 0 0 #ececec, 0 1px 0 0 #ececec;
+}
+.site-navigation__logo {
+  height: 35px;
+  padding: 20px 47px;
+}
+
+.site-navigation__button {
+  @include kill-indents();
+  width: 22px;
+  height: 18px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+  border: none;
+
+  cursor: pointer;
+}
+.site-navigation__bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.site-navigation__list {
+  @include kill-indents();
+  list-style: none;
+}
+.site-navigation__item {
+  @include kill-indents();
+  padding: 30px 50px 30px 75px;
+}
+.site-navigation__link {
+  font-weight: 700;
+
+  text-decoration: none;
+  color: #000000;
+}
+.site-navigation__delivery {
+  display: none;
+}
+.site-navigation__link--new {
+  font-size: 15px;
+}
+.site-navigation__list--new {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation {
+    display: flex;
+    position: relative;
+  }
+
+  .site-navigation__top-wrapper {
+    position: absolute;
+    justify-content: flex-start;
+    min-height: 90px;
+  }
+
+  .site-navigation__bottom-wrapper {
+    display: flex;
+  }
+  .site-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--new {
+      display: none;
+    }
+  }
+  .site-navigation__delivery {
+    display: block;
+
+    font-size: 15px;
+    color: $dark-gray;
+  }
+  .site-navigation__button {
+    display: none;
+  }
+  .site-navigation__list--user {
+    justify-content: flex-end;
+    width: 100%;
+    order: -3;
+  }
+  .site-navigation__item {
+    padding-left: 0;
+  }
+  .site-navigation__logo {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .site-navigation__list--new {
+    display: flex;
+  }
+  .site-navigation__list--site {
+    order: -4;
+    width: 50%;
+  }
+  .site-navigation__list--user {
+    width: 50%;
+  }
+  .site-navigation__top-wrapper {
+    justify-content: center;
+  }
+  .site-navigation__bottom-wrapper {
+    flex-direction: row;
+  }
+}
+
+

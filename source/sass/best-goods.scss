@@ -1,5 +1,7 @@
 .best-goods {
-  padding-top: 30px;
+  width: 260px;
+  margin: 0 auto;
+  padding: 30px;
   padding-bottom: 35px;
 
   color: $dark-gray;
@@ -32,6 +34,9 @@
   line-height: 20px;
 }
 .best-goods__image {
+  display: block;
+
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .best-goods__price {
@@ -43,4 +48,51 @@
 }
 .best-goods__button {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .best-goods__head-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .best-goods__label {
+    width: 90px;
+  }
+  .best-goods__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .best-goods__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .best-goods {
+    position: relative;
+    min-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+  .best-goods__wrapper {
+    width: 100%;
+  }
+  .best-goods__main-wrapper {
+    width: 50%;
+  }
+  .best-goods__right-wrapper {
+    @include kill-indents();
+    width: 50%;
+  }
+  .best-goods__footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .best-goods {
+    min-width: 1050px;
+  }
 }

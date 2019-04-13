@@ -1,4 +1,7 @@
 .about-us {
+  width: 260px;
+  margin: 0 auto;
+  padding: 30px;
   padding-top: 35px;
   margin-bottom: 60px;
 }
@@ -8,17 +11,54 @@
   font-weight: 700;
 }
 .about-us__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   @include kill-indents();
   list-style: none;
 }
 .about-us__item {
   @include kill-indents();
-  margin-bottom: 85px;
+  margin-top: 85px;
 
   line-height: 30px;
   font-weight: 700;
 
   &--last-child {
    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    min-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__list {
+    flex-direction: row;
+  }
+
+  .about-us__item {
+    width: 50%;
+
+    &--flower {
+      order: -5;
+    }
+    &--clew {
+      order: -4;
+    }
+    &--money {
+      order: -3;
+    }
+    &--rocket {
+      order: -2;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .about-us {
+    min-width: 1050px;
   }
 }
