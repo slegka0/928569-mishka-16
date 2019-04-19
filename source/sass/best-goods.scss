@@ -26,11 +26,11 @@
 }
 .best-goods__description {
   @include kill-indents();
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   font-size: 15px;
 }
 .best-goods__table {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 .best-goods__specification {
   padding: 9px 0 9px 0;
@@ -48,7 +48,7 @@
   display: block;
 
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 .best-goods__price {
   @include kill-indents();
@@ -61,7 +61,7 @@
   margin: 0 auto;
 }
 .best-goods__head-wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 .best-goods__right-wrapper {
   margin-top: -5px;
