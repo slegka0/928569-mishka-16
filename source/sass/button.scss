@@ -1,7 +1,7 @@
 .button {
   display: block;
 
-  padding: 17px 0;
+  padding: 15px 0 13px 0;
   border: 2px solid $dark-gray;
 
   font-size: 17px;
@@ -13,4 +13,15 @@
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $dark-gray;
+  }
+
+  &:active {
+    color: #757575;
+  }
 }
+
+

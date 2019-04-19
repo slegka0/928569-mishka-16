@@ -19,9 +19,10 @@
 }
 .about-us__item {
   @include kill-indents();
-  margin-top: 85px;
+  padding-top: 65px;
+  margin-bottom: 18px;
 
-  line-height: 30px;
+  line-height: 20px;
   font-weight: 700;
 
   &--last-child {
@@ -35,30 +36,46 @@
     padding-left: 50px;
     padding-right: 50px;
   }
-
+  .about-us__title {
+    @include kill-indents();
+    margin-bottom: 37px;
+    font-size: 43px;
+    line-height: 50px;
+  }
   .about-us__list {
     flex-direction: row;
   }
-
   .about-us__item {
+    box-sizing: border-box;
     width: 50%;
+    padding-right: 62px;
+    margin-bottom: 46px;
 
+    font-size: 20px;
+    line-height: 22px;
+    order: 5;
     &--flower {
-      order: -5;
+      order: 1;
     }
     &--clew {
-      order: -4;
+      order: 2;
     }
     &--money {
-      order: -3;
+      order: 3;
     }
     &--rocket {
-      order: -2;
+      order: 4;
     }
   }
 }
 @media (min-width: $desktop-width) {
   .about-us {
-    min-width: 1050px;
+    width: 700px;
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

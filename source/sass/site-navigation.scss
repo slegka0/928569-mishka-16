@@ -2,17 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 100%;
+  padding-left: 70px;
+  padding-right: 30px;
+  margin-bottom: 3px;
+  width: 220px;
   box-shadow: inset 0 1px 0 0 #ececec, 0 1px 0 0 #ececec;
 }
 .site-navigation__logo {
   height: 35px;
-  padding: 20px 47px;
+  padding: 22px 47px 18px 47px;
 }
 
 .site-navigation__button {
   @include kill-indents();
+  margin-left: auto;
   width: 22px;
   height: 18px;
 
@@ -37,9 +40,18 @@
 }
 .site-navigation__item {
   @include kill-indents();
-  padding: 30px 50px 30px 75px;
+  padding: 29px 50px 26px 75px;
+
+  cursor: pointer;
+}
+.site-navigation__item:hover .site-navigation__link {
+  color: #666666;
+}
+.site-navigation__item:active .site-navigation__link {
+  color: #b7b7b7;
 }
 .site-navigation__link {
+  display: block;
   font-weight: 700;
 
   text-decoration: none;
@@ -60,19 +72,25 @@
     display: flex;
     position: relative;
   }
-
+  .site-navigation__item--cart a {
+    padding-left: 95px;
+  }
   .site-navigation__top-wrapper {
+    @include kill-indents();
     position: absolute;
     justify-content: flex-start;
     min-height: 90px;
+    box-shadow: none;
   }
 
   .site-navigation__bottom-wrapper {
     display: flex;
+    flex-direction: row;
   }
   .site-navigation__list {
     display: flex;
     flex-wrap: wrap;
+    width: 400px;
 
     &--new {
       display: none;
@@ -80,6 +98,8 @@
   }
   .site-navigation__delivery {
     display: block;
+    margin-left: auto;
+    padding-top: 26px;
 
     font-size: 15px;
     color: $dark-gray;
@@ -92,11 +112,21 @@
     width: 100%;
     order: -3;
   }
+  .site-navigation__list--user .site-navigation__link {
+    padding-top: 3px;
+  }
   .site-navigation__item {
     padding-left: 0;
+    padding-right: 0;
   }
   .site-navigation__logo {
     padding-left: 0;
+  }
+  .site-navigation__list--site .site-navigation__link {
+    padding-right: 25px;
+  }
+  .site-navigation__list--site .site-navigation__item {
+    padding-top: 26px;
   }
 }
 
@@ -104,6 +134,11 @@
 
   .site-navigation__list--new {
     display: flex;
+  }
+  .site-navigation__list--new .site-navigation__item {
+    padding-top: 25px;
+    padding-right: 32px;
+    margin-right: 35px;
   }
   .site-navigation__list--site {
     order: -4;
@@ -113,10 +148,18 @@
     width: 50%;
   }
   .site-navigation__top-wrapper {
+    width: 100%;
     justify-content: center;
   }
   .site-navigation__bottom-wrapper {
-    flex-direction: row;
+    align-items: center;
+  }
+  .site-navigation__list--site .site-navigation__item {
+    padding-top: 32px;
+    padding-right: 55px;
+  }
+  .site-navigation__delivery {
+    padding-top: 0;
   }
 }
 

@@ -1,3 +1,7 @@
+.footer-social {
+  margin-bottom: 42px;
+}
+
 .footer-social__list {
   display: flex;
   justify-content: center;
@@ -9,7 +13,7 @@
 }
 .footer-social__item {
   @include kill-indents();
-  margin-right: 41px;
+  margin-right: 34px;
 
   &--last-child {
     margin-right: 0;
@@ -34,5 +38,15 @@
 
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer-social {
+    margin: 0;
+  }
+  .page-footer__logo-image {
+    width: 105px;
+    height: 44px;
   }
 }
