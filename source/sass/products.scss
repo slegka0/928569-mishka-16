@@ -66,7 +66,6 @@
     padding-right: 50px;
     margin-top: 60px;
   }
-
   .products__item {
     display: flex;
     flex-direction: row;
@@ -93,6 +92,7 @@
     padding-left: 5px;
   }
   .products__name {
+    width: 240px;
     font-size: 20px;
     line-height: 24px;
   }

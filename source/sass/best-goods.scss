@@ -56,6 +56,7 @@
 
   font-weight: 700;
   text-align: center;
+  word-spacing: -4px;
 }
 .best-goods__button {
   margin: 0 auto;
@@ -65,6 +66,10 @@
 }
 .best-goods__right-wrapper {
   margin-top: -5px;
+}
+.best-goods__price {
+  letter-spacing: 0.9px;
+  word-spacing: -4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,6 +88,8 @@
   .best-goods__title {
     font-size: 43px;
     line-height: 50px;
+    letter-spacing: 0.1px;
+    word-spacing: -4px;
   }
   .best-goods__wrapper {
     display: flex;
@@ -106,9 +113,9 @@
     line-height: 30px;
   }
   .best-goods__main-wrapper {
-    padding-right: 40px;
+    padding-right: 30px;
     padding-bottom: 129px;
-    width: 294px;
+    width: 304px;
   }
   .best-goods__right-wrapper {
     @include kill-indents();
@@ -148,7 +155,7 @@
   }
   .best-goods__main-wrapper {
     padding-top: 157px;
-    padding-bottom: 135px;
+    padding-bottom: 137px;
   }
   .best-goods__label {
     margin-left: 92px;
@@ -161,6 +168,14 @@
     margin-bottom: 47px;
   }
   .best-goods__footer-wrapper {
-    margin-top: -135px;
+    width: 292px;
+    margin-top: -137px;
+  }
+  .best-goods__price {
+    letter-spacing: 0.3px;
+    word-spacing: -2px;
+  }
+  .best-goods__right-wrapper {
+    padding-left: 15px;
   }
 }

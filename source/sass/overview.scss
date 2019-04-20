@@ -13,13 +13,14 @@
 }
 .overview__title {
   @include kill-indents();
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 260px;
+  margin: 0 auto;
 
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+
 }
 .overview__link {
   display: block;
@@ -82,6 +83,7 @@
     line-height: 30px;
   }
   .overview__title {
+    max-width: 500px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -95,10 +97,15 @@
 
 @media (min-width: $desktop-width) {
   .overview__title {
+    max-width: 700px;
     font-size: 53px;
     line-height: 57px;
-  }
 
+  }
+  .overview__wrapper {
+    min-height: 470px;
+    padding-top: 87px;
+  }
   .overview {
     min-width: 1050px;
     margin-bottom: 75px;

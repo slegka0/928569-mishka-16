@@ -41,6 +41,8 @@
     margin-bottom: 37px;
     font-size: 43px;
     line-height: 50px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
   }
   .about-us__list {
     flex-direction: row;
@@ -48,7 +50,7 @@
   .about-us__item {
     box-sizing: border-box;
     width: 50%;
-    padding-right: 62px;
+    padding-right: 30px;
     margin-bottom: 46px;
 
     font-size: 20px;
