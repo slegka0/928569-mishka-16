@@ -4,7 +4,8 @@
   margin: 0 auto;
 }
 .overview__wrapper {
-  min-height: 283px;
+  min-height: 209px;
+  padding-top: 74px;
 
   background-image: url(../img/hero-mobile@1x.jpg);
   background-position: center -10px;
@@ -12,8 +13,9 @@
 }
 .overview__title {
   @include kill-indents();
-  padding: 30px;
-  padding-top: 74px;
+  padding-left: 30px;
+  padding-right: 30px;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -61,7 +63,8 @@
 
 @media (min-width: $tablet-width) {
   .overview__wrapper {
-    min-height: 557px;
+    min-height: 472px;
+    padding-top: 85px;
     background-size: 170%;
     background-position: center -70px;
     background-repeat: no-repeat;
@@ -79,8 +82,6 @@
     line-height: 30px;
   }
   .overview__title {
-    padding-top: 85px;
-
     font-size: 43px;
     line-height: 50px;
   }
@@ -94,10 +95,10 @@
 
 @media (min-width: $desktop-width) {
   .overview__title {
-    padding-top: 87px;
     font-size: 53px;
     line-height: 57px;
   }
+
   .overview {
     min-width: 1050px;
     margin-bottom: 75px;
