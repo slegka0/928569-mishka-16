@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding-top: 26px;
   padding-bottom: 30px;
-  /*background-color: #f1f1f1;*/
+  background-color: #f1f1f1;
 }
 .page-footer__wrapper {
   display: flex;
@@ -28,6 +28,9 @@
 }
 .page-footer__logo {
   display: none;
+}
+.page-footer__image {
+  margin-top: 5px;
 }
 .page-footer__image path {
   fill: #63d1bb;
