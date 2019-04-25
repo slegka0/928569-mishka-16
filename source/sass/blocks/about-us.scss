@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 30px;
   padding-top: 35px;
-  margin-bottom: 60px;
+  margin-bottom: 5px;
 }
 .about-us__title {
   font-size: 25px;
@@ -35,6 +35,7 @@
     min-width: 668px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 9px;
   }
   .about-us__title {
     @include kill-indents();
@@ -75,6 +76,7 @@
     width: 700px;
     padding-right: 175px;
     padding-left: 175px;
+    margin-bottom: 13px;
   }
   .about-us__title {
     font-size: 53px;
