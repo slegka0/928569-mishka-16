@@ -10,7 +10,7 @@
   background-color: #f1f1f1;
 }
 
-.page-footer__wrapper {
+.page-footer__link {
   display: flex;
 }
 
@@ -23,10 +23,10 @@
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.page-footer__link:active {
+  opacity: 0.3;
 }
 
 .page-footer__logo {
@@ -39,6 +39,14 @@
 
 .page-footer__image path {
   fill: #63d1bb;
+}
+
+.page-footer__logo-link:hover path {
+  fill: #46c1ae;
+}
+
+.page-footer__logo-link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

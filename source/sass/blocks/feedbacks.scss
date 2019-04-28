@@ -1,10 +1,26 @@
 .feedbacks {
+  position: relative;
   width: 260px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
+
+.feedbacks::after {
+  position: absolute;
+  content: "";
+
+  @include kill-indents();
+  width: 320px;
+  height: 6px;
+  left: 0px;
+  bottom: -53px;
+  background-repeat: repeat no-repeat;
+  background-size: contain;
+  background-image: url("../../img/bg-zigzag-line.svg");
+}
+
 
 .feedbacks__title {
   @include kill-indents();
@@ -20,7 +36,7 @@
 
 .feedbacks__text {
   @include kill-indents();
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   font-size: 15px;
   line-height: 30px;
@@ -58,6 +74,22 @@
 .feedbacks__button {
   width: 50%;
   height: 50px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.feedbacks__button--right svg {
+  transform: rotate(180deg);
 }
 
 @media (min-width: $tablet-width) {
@@ -71,6 +103,16 @@
     padding-right: 50px;
     padding-bottom: 17px;
     margin-bottom: 81px;
+
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .feedbacks::after {
+    bottom: -82px;
+    height: 15px;
+    width: 100%;
+    background-size: contain;
   }
 
   .feedbacks__wrapper {
@@ -119,15 +161,27 @@
     padding-top: 71px;
     padding-left: 225px;
     padding-bottom: 65px;
+
+    background-position-x: 50px;
+  }
+
+  .feedbacks::after {
+    bottom: -89px;
+    height: 23px;
+    width: 1050px;
+    margin: 0 50px;
+    background-size: contain;
+    transform: rotate(180deg);
   }
 
   .feedbacks__title {
+    margin-left: -5px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .feedbacks__text {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     max-width: 770px;
   }
 

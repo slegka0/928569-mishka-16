@@ -12,6 +12,14 @@
 .site-navigation__logo {
   height: 35px;
   padding: 22px 47px 18px 47px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-navigation__button {
@@ -50,12 +58,28 @@
   &--search {
     padding-left: 32px;
   }
+
+  &--cart {
+    padding-left: 30px;
+  }
 }
 
-.site-navigation__search-icon {
+.site-navigation__icon {
   position: relative;
-  top: 3px;
   margin-right: 21px;
+
+  &--search {
+    top: 3px;
+  }
+
+  &--cart {
+    top: 1px;
+  }
+}
+
+.site-navigation__item--cart .site-navigation__link {
+  position: relative;
+  top: -2px;
 }
 
 .site-navigation__item:hover .site-navigation__link {
@@ -64,6 +88,14 @@
 
 .site-navigation__item:active .site-navigation__link {
   color: #b7b7b7;
+}
+
+.site-navigation__item:hover path {
+  fill: #63d1bb;
+}
+
+.site-navigation__item:active svg {
+  opacity: 0.3;
 }
 
 .site-navigation__link {
@@ -93,7 +125,14 @@
   }
 
   .site-navigation__item--cart a {
-    padding-left: 95px;
+    padding-left: 43px;
+  }
+
+  .site-navigation__icon {
+    &--cart {
+      top: 5px;
+      margin-right: 27px;
+    }
   }
 
   .site-navigation__top-wrapper {

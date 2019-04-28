@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 17px;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
 }
 
 .contacts__wrapper {
@@ -59,7 +59,7 @@
 .contacts__image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .contacts__button {
@@ -68,11 +68,45 @@
   letter-spacing: 0.5px;
 }
 
+.contacts__e-mail {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 1px;
+    background-color: #46c1ae;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__e-mail:hover::after {
+  background-color: #46c1ae;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 63px;
     padding-bottom: 55px;
     margin-bottom: 2px;
+  }
+
+  .contacts__e-mail::after {
+    top: 28px;
+    left: 2px;
+    width: 203px;
   }
 
   .contacts__wrapper {
@@ -124,7 +158,14 @@
     width: 875px;
     padding-left: 225px;
     padding-right: 50px;
+    padding-bottom: 50px;
     margin: 0 auto;
+  }
+
+  .contacts__e-mail::after {
+    top: 29px;
+    left: 0;
+    width: 201px;
   }
 
   .contacts__wrapper {
@@ -153,7 +194,7 @@
 
   .contacts__button {
     position: absolute;
-    bottom: 110px;
+    bottom: 104px;
     margin: 0;
     width: 226px;
     letter-spacing: 0.1px;

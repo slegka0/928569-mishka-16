@@ -1,10 +1,25 @@
 .best-goods {
+  position: relative;
   width: 260px;
   margin: 0 auto;
   padding: 30px;
   padding-bottom: 14px;
 
   color: $dark-gray;
+}
+
+.best-goods::after {
+  position: absolute;
+  content: "";
+
+  @include kill-indents();
+  width: 320px;
+  height: 6px;
+  left: 0px;
+  bottom: -28px;
+  background-repeat: repeat no-repeat;
+  background-size: contain;
+  background-image: url("../../img/bg-zigzag-line.svg");
 }
 
 .best-goods__title {
@@ -90,6 +105,12 @@
     margin-bottom: 44px;
   }
 
+  .best-goods::after {
+    height: 15px;
+    width: 100%;
+    background-size: contain;
+  }
+
   .best-goods__label {
     line-height: 17px;
     align-self: center;
@@ -113,7 +134,7 @@
 
   .best-goods {
     min-width: 668px;
-    padding-top: 56px;
+    padding-top: 55px;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 43px;
@@ -162,7 +183,7 @@
     padding-top: 0;
     min-width: 875px;
     padding-left: 225px;
-    margin-bottom: 81px;
+    margin-bottom: 82px;
   }
 
   .best-goods__title {
@@ -173,12 +194,14 @@
 
   .best-goods__head-wrapper {
     position: absolute;
-    top: 53px;
+    top: 50px;
     left: 0;
   }
 
   .best-goods__main-wrapper {
-    padding-top: 157px;
+    width: 350px;
+    padding-right: 0;
+    padding-top: 155px;
     padding-bottom: 137px;
   }
 
@@ -194,10 +217,12 @@
   }
 
   .best-goods__description {
+    width: 300px;
     margin-bottom: 47px;
   }
 
   .best-goods__footer-wrapper {
+    margin-top: -137px;
     width: 292px;
   }
 
@@ -207,6 +232,16 @@
   }
 
   .best-goods__right-wrapper {
-    padding-left: 15px;
+    margin-top: -2px;
+    width: 525px;
+  }
+
+  .best-goods::after {
+    bottom: -55px;
+    height: 23px;
+    width: 1050px;
+    margin: 0 50px;
+    background-size: contain;
+    transform: rotate(180deg);
   }
 }
