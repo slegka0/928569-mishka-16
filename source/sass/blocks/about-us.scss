@@ -34,7 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .about-us {
     min-width: 668px;
     padding-left: 50px;
@@ -64,20 +63,25 @@
     font-size: 20px;
     line-height: 22px;
     order: 5;
+
     &--flower {
       order: 1;
     }
+
     &--clew {
       order: 2;
     }
+
     &--money {
       order: 3;
     }
+
     &--rocket {
       order: 4;
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .about-us {
     width: 700px;

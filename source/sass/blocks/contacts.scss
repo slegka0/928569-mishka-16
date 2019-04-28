@@ -28,6 +28,7 @@
 .contacts__item {
   display: flex;
   flex-direction: row;
+
   @include kill-indents();
   margin-bottom: 30px;
 
