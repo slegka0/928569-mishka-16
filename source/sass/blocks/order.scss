@@ -5,6 +5,7 @@
   padding-bottom: 57px;
   margin: 0 auto;
 }
+
 .order__label {
   display: block;
   padding-left: 63px;
@@ -19,6 +20,7 @@
     flex-direction: column;
   }
 }
+
 .order__fieldset {
   @include kill-indents();
   margin-bottom: 45px;
@@ -28,6 +30,7 @@
     margin-bottom: 7px;
   }
 }
+
 .order__legend {
   margin-bottom: 35px;
 
@@ -44,10 +47,12 @@
     margin-bottom: 7px;
   }
 }
+
 .order__list {
   @include kill-indents();
   list-style: none;
 }
+
 .order__item {
   @include kill-indents();
   margin-bottom: 24px;
@@ -63,6 +68,7 @@
     margin-bottom: 0;
   }
 }
+
 .order__input-text {
   margin-top: 10px;
   padding-top: 5px;
@@ -74,6 +80,7 @@
   outline: none;
   background: transparent;
 }
+
 .order__textarea {
   width: 232px;
   min-height: 121px;
@@ -98,6 +105,7 @@
   line-height: 16px;
   color: #444444;
 }
+
 .order__button {
   width: 260px;
 }
@@ -107,9 +115,11 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .order__button {
     width: 230px;
   }
+
   .order__label {
     width: 400px;
     padding-left: 83px;
@@ -117,13 +127,15 @@
     line-height: 18px;
 
     &--check {
-    width: 150px;
+      width: 150px;
     }
   }
+
   .order__text {
     font-size: 17px;
     line-height: 30px;
   }
+
   .order__fieldset {
     padding-top: 65px;
     padding-bottom: 69px;
@@ -137,6 +149,7 @@
       background-color: #f1f1f1;
     }
   }
+
   .order__list {
     width: 50%;
 
@@ -146,6 +159,7 @@
       width: 500px;
     }
   }
+
   .order__item {
     margin-bottom: 57px;
 
@@ -153,6 +167,7 @@
       margin-bottom: 0;
     }
   }
+
   .order__legend {
     width: 160px;
   }

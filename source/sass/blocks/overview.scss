@@ -3,37 +3,36 @@
   width: 320px;
   margin: 0 auto;
 }
+
 .overview__wrapper {
   min-height: 209px;
   padding-top: 74px;
-
   background-image: url(../img/hero-mobile@1x.jpg);
   background-position: center -10px;
   background-repeat: no-repeat;
 }
+
 .overview__title {
   @include kill-indents();
   max-width: 260px;
   margin: 0 auto;
-
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
 
 }
+
 .overview__link {
   display: block;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 27px;
   padding-bottom: 28px;
-
   font-size: 19px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-
   background-repeat: no-repeat;
 
   &--luster {
@@ -43,24 +42,28 @@
     background-color: #56c3b2;
   }
 }
+
 .overview__link:hover:nth-child(1) {
   background-color: #59d5bc;
 }
+
 .overview__link:hover:nth-child(2) {
   background-color: #46c1ae;
 }
+
 .overview__link:active .overview__text {
   opacity: 0.3;
 }
+
 .overview__text {
   display: block;
   width: 50%;
 }
+
 .overview__link-wrapper {
   display: flex;
   flex-direction: column;
 }
-
 
 @media (min-width: $tablet-width) {
   .overview__wrapper {
@@ -70,29 +73,31 @@
     background-position: center -70px;
     background-repeat: no-repeat;
   }
+
   .overview__link-wrapper {
     flex-direction: row;
   }
+
   .overview__link {
     padding-top: 29px;
     padding-bottom: 20px;
     padding-left: 35px;
     width: 50%;
-
     font-size: 20px;
     line-height: 30px;
   }
+
   .overview__title {
     max-width: 500px;
     font-size: 43px;
     line-height: 50px;
   }
+
   .overview {
     min-width: 668px;
     padding-left: 50px;
     padding-right: 50px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -100,20 +105,23 @@
     max-width: 700px;
     font-size: 53px;
     line-height: 57px;
-
   }
+
   .overview__wrapper {
     min-height: 470px;
     padding-top: 87px;
   }
+
   .overview {
     min-width: 1050px;
     margin-bottom: 75px;
     padding-bottom: 15px;
   }
+
   .overview__link {
     padding-bottom: 13px;
   }
+
   .overview__text {
     width: 130px;
   }

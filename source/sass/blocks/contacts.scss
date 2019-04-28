@@ -2,6 +2,7 @@
   padding-top: 17px;
   padding-bottom: 40px;
 }
+
 .contacts__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -9,6 +10,7 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .contacts__title {
   @include kill-indents();
   margin-bottom: 27px;
@@ -16,11 +18,13 @@
   font-size: 18px;
   line-height: 30px;
 }
+
 .contacts__list {
   @include kill-indents();
 
   list-style: none;
 }
+
 .contacts__item {
   display: flex;
   flex-direction: row;
@@ -32,25 +36,30 @@
   color: #444444;
 
   &--last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
+
 .contacts__left-value {
   width: 65px;
   margin-right: 11px;
 }
+
 .contacts__right-value {
   width: 185px;
 }
+
 .contacts__adress {
   display: inline;
   font-style: normal;
 }
+
 .contacts__image {
   display: block;
   margin: 0 auto;
   margin-bottom: 35px;
 }
+
 .contacts__button {
   margin: 0 auto;
   width: 260px;
@@ -63,12 +72,14 @@
     padding-bottom: 55px;
     margin-bottom: 2px;
   }
+
   .contacts__wrapper {
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 55px;
   }
+
   .contacts__title {
     margin-left: -5px;
     margin-bottom: 50px;
@@ -76,21 +87,26 @@
     font-size: 43px;
     line-height: 50px;
   }
+
   .contacts__list {
     display: flex;
   }
+
   .contacts__item {
     width: 50%;
     font-size: 17px;
     line-height: 30px;
     margin-right: 10px;
   }
+
   .contacts__right-value {
     width: 249px;
   }
+
   .contacts__button {
     width: 230px;
   }
+
   .contacts__image {
     width: 100%;
     height: 457px;
@@ -98,7 +114,7 @@
   }
 }
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .contacts {
     position: relative;
     display: flex;
@@ -108,25 +124,31 @@
     padding-right: 50px;
     margin: 0 auto;
   }
+
   .contacts__wrapper {
     width: 350px;
     padding: 0;
     padding-top: 85px;
   }
+
   .contacts__list {
     flex-direction: column;
   }
+
   .contacts__item {
     width: 100%;
   }
+
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
   }
+
   .contacts__image {
     width: 525px;
     margin-top: 15px;
   }
+
   .contacts__button {
     position: absolute;
     bottom: 110px;

@@ -9,9 +9,11 @@
   padding-bottom: 30px;
   background-color: #f1f1f1;
 }
+
 .page-footer__wrapper {
   display: flex;
 }
+
 .page-footer__developed {
   margin-right: 30px;
   align-self: center;
@@ -26,15 +28,19 @@
     opacity: 0.3;
   }
 }
+
 .page-footer__logo {
   display: none;
 }
+
 .page-footer__image {
   margin-top: 5px;
 }
+
 .page-footer__image path {
   fill: #63d1bb;
 }
+
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;

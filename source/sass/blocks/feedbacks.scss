@@ -5,6 +5,7 @@
   padding-right: 30px;
   margin-bottom: 70px;
 }
+
 .feedbacks__title {
   @include kill-indents();
   margin-bottom: 24px;
@@ -12,9 +13,11 @@
   font-size: 25px;
   line-height: 30px;
 }
+
 .feedbacks__wrapper {
   margin-bottom: 30px;
 }
+
 .feedbacks__text {
   @include kill-indents();
   margin-bottom: 27px;
@@ -23,18 +26,21 @@
   line-height: 30px;
   color: #444444;
 }
+
 .feedbacks__name {
   display: block;
   margin-bottom: 3px;
 
   font-weight: 700;
 }
+
 .feedbacks__e-mail {
   @include kill-indents();
 
   line-height: 30px;
   color: #444444;
 }
+
 .feedbacks__link {
   box-sizing: border-box;
   width: 260px;
@@ -42,11 +48,13 @@
   font-size: 17px;
   line-height: 20px;
 }
+
 .feedbacks__buttons-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 38px;
 }
+
 .feedbacks__button {
   width: 50%;
   height: 50px;
@@ -64,9 +72,11 @@
     padding-bottom: 17px;
     margin-bottom: 83px;
   }
+
   .feedbacks__wrapper {
     order: 3;
   }
+
   .feedbacks__buttons-wrapper {
     order: 4;
     position: absolute;
@@ -74,6 +84,7 @@
     bottom: 13px;
     right: 50px;
   }
+
   .feedbacks__title {
     order: 1;
     margin-bottom: 48px;
@@ -82,14 +93,17 @@
     font-size: 43px;
     line-height: 50px;
   }
+
   .feedbacks__text {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 57px;
   }
+
   .feedbacks__name {
     font-size: 18px;
   }
+
   .feedbacks__link {
     order: 2;
     width: 176px;
@@ -105,24 +119,30 @@
     padding-left: 225px;
     padding-bottom: 65px;
   }
+
   .feedbacks__title {
     font-size: 53px;
     line-height: 57px;
   }
+
   .feedbacks__text {
     margin-bottom: 40px;
     max-width: 770px;
   }
+
   .feedbacks__buttons-wrapper {
     bottom: 61px;
   }
+
   .feedbacks__link {
     margin-top: 10px;
   }
+
   .feedbacks__name {
     letter-spacing: -0.5px;
     max-width: 700px;
   }
+
   .feedbacks__e-mail {
     max-width: 700px;
   }

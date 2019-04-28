@@ -11,6 +11,7 @@
   @include kill-indents();
   list-style: none;
 }
+
 .footer-social__item {
   @include kill-indents();
   margin-right: 34px;
@@ -19,6 +20,7 @@
     margin-right: 0;
   }
 }
+
 .footer-social__link {
   display: block;
 
@@ -45,6 +47,7 @@
   .footer-social {
     margin: 0;
   }
+
   .page-footer__logo-image {
     width: 105px;
     height: 44px;
