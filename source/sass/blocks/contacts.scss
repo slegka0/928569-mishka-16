@@ -42,6 +42,7 @@
 }
 
 .contacts__left-value {
+  @include kill-indents();
   width: 65px;
   margin-right: 11px;
 }
