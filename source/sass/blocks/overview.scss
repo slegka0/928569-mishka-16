@@ -1,5 +1,5 @@
 .overview {
-  background-color: #fcfcfc;
+  background-color: #fafafa;
   width: 320px;
   margin: 0 auto;
 }
@@ -101,7 +101,7 @@
 
   .overview__link {
     padding-top: 29px;
-    padding-bottom: 20px;
+    padding-bottom: 39px;
     padding-left: 35px;
     width: 50%;
     font-size: 20px;
@@ -119,9 +119,24 @@
   }
 
   .overview {
+    position: relative;
     min-width: 668px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .overview::after {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    bottom: -2px;
+    left: 0;
+    background-repeat: repeat-x;
+    background-size: contain;
   }
 
   .overview__link svg {
@@ -144,15 +159,21 @@
 
   .overview {
     min-width: 1050px;
-    margin-bottom: 75px;
+    margin-bottom: 55px;
     padding-bottom: 15px;
+    overflow: hidden;
   }
 
   .overview__link {
-    padding-bottom: 13px;
+    padding-bottom: 32px;
   }
 
   .overview__text {
     width: 130px;
+  }
+
+  .overview::after {
+    width: 112%;
+    height: 38px;
   }
 }

@@ -5,6 +5,7 @@
 }
 
 .page-main__title {
+  position: relative;
   @include kill-indents();
 
   font-size: 27px;
@@ -20,7 +21,7 @@
   @include kill-indents();
   width: 260px;
   margin: 0 auto;
-  margin-top: 23px;
+  margin-top: 22px;
   margin-bottom: 23px;
   padding-left: 30px;
   padding-right: 30px;
@@ -32,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .page-main {
     &--catalog {
-      margin-bottom: 74px;
+      margin-bottom: 61px;
     }
   }
 
@@ -40,7 +41,20 @@
     font-size: 43px;
     line-height: 50px;
     padding-top: 27px;
-    padding-bottom: 67px;
+    padding-bottom: 91px;
+  }
+
+  .page-main__title::after {
+    content: "";
+
+    position: absolute;
+    width: 105%;
+    height: 24px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
   }
 
   .page-main__text {
