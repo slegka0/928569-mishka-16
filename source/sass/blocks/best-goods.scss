@@ -1,0 +1,247 @@
+.best-goods {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 14px;
+
+  color: $dark-gray;
+}
+
+.best-goods::after {
+  position: absolute;
+  content: "";
+
+  @include kill-indents();
+  width: 320px;
+  height: 6px;
+  left: 0;
+  bottom: -28px;
+  background-repeat: repeat no-repeat;
+  background-size: contain;
+  background-image: url("../../img/bg-zigzag-line.svg");
+}
+
+.best-goods__title {
+  @include kill-indents();
+  margin-bottom: 5px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.best-goods__label {
+  @include kill-indents();
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.best-goods__description {
+  @include kill-indents();
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.best-goods__table {
+  margin-bottom: 32px;
+}
+
+.best-goods__specification {
+  padding: 9px 0 9px 0;
+
+  font-size: 15px;
+  line-height: 20px;
+
+  &:nth-child(1) {
+    min-width: 95px;
+  }
+
+  &:nth-child(2) {
+    width: 100%;
+  }
+}
+
+.best-goods__image {
+  display: block;
+
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.best-goods__price {
+  @include kill-indents();
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.9px;
+  word-spacing: -4px;
+}
+
+.best-goods__button {
+  margin: 0 auto;
+}
+
+.best-goods__head-wrapper {
+  margin-bottom: 22px;
+}
+
+.best-goods__right-wrapper {
+  margin-top: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .best-goods__head-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-bottom: 44px;
+  }
+
+  .best-goods::after {
+    height: 15px;
+    width: 100%;
+    background-size: contain;
+  }
+
+  .best-goods__label {
+    line-height: 17px;
+    align-self: center;
+    width: 90px;
+    text-align: center;
+  }
+
+  .best-goods__title {
+    font-size: 43px;
+    line-height: 50px;
+    letter-spacing: 0.1px;
+    word-spacing: -4px;
+  }
+
+  .best-goods__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .best-goods {
+    min-width: 668px;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 43px;
+  }
+
+  .best-goods__description {
+    display: block;
+    margin-bottom: 34px;
+    padding-right: 20px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-goods__main-wrapper {
+    padding-right: 30px;
+    padding-bottom: 129px;
+    width: 304px;
+  }
+
+  .best-goods__right-wrapper {
+    @include kill-indents();
+    width: 50%;
+  }
+
+  .best-goods__footer-wrapper {
+    margin-top: -137px;
+    width: 289px;
+  }
+
+  .best-goods__price {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .best-goods__image {
+    margin-top: 8px;
+    width: 334px;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .best-goods {
+    position: relative;
+    padding-top: 0;
+    min-width: 875px;
+    padding-left: 225px;
+    margin-bottom: 82px;
+  }
+
+  .best-goods__title {
+    font-size: 53px;
+    line-height: 57px;
+    order: 2;
+  }
+
+  .best-goods__head-wrapper {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  .best-goods__main-wrapper {
+    width: 350px;
+    padding-right: 0;
+    padding-top: 155px;
+    padding-bottom: 137px;
+  }
+
+  .best-goods__label {
+    width: 82px;
+    margin-left: 92px;
+    margin-right: 46px;
+  }
+
+  .best-goods__image {
+    width: 525px;
+    margin-top: 0;
+  }
+
+  .best-goods__description {
+    width: 300px;
+    margin-bottom: 47px;
+  }
+
+  .best-goods__footer-wrapper {
+    margin-top: -137px;
+    width: 292px;
+  }
+
+  .best-goods__price {
+    letter-spacing: 0.3px;
+    word-spacing: -2px;
+  }
+
+  .best-goods__right-wrapper {
+    margin-top: -2px;
+    width: 525px;
+  }
+
+  .best-goods::after {
+    bottom: -55px;
+    height: 23px;
+    width: 1050px;
+    margin: 0 50px;
+    background-size: contain;
+    transform: rotate(180deg);
+  }
+}
