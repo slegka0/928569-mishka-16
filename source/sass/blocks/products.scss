@@ -160,7 +160,7 @@
 @media (min-width: $desktop-width) {
   .products {
     min-width: 1050px;
-    margin-top: 118px;
+    margin-top: 85px;
     margin-bottom: 4px;
   }
 
@@ -189,6 +189,7 @@
   .products__wrapper {
     box-sizing: border-box;
     padding-top: 25px;
+    border-left: 1px solid #ececec;
 
     width: 100%;
     height: 100%;

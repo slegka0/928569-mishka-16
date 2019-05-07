@@ -76,10 +76,15 @@
     }
   }
 
+  .page-main__title::after {
+    height: 32px;
+  }
+
   .page-main__title {
     font-size: 53px;
     line-height: 57px;
-    padding-bottom: 82px;
+    padding-top: 24px;
+    padding-bottom: 117px;
   }
 
   .page-main__text {

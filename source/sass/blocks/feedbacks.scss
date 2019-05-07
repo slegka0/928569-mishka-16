@@ -76,7 +76,7 @@
   height: 50px;
 
   background-color: transparent;
-  border: none;
+  border: 1px solid #ececec;
   cursor: pointer;
 
   &:hover {
@@ -106,6 +106,10 @@
 
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   .feedbacks::after {
@@ -117,6 +121,10 @@
 
   .feedbacks__wrapper {
     order: 3;
+  }
+
+  .feedbacks__button {
+    border: none;
   }
 
   .feedbacks__buttons-wrapper {

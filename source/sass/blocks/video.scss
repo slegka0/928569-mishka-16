@@ -122,19 +122,26 @@
   .video {
     display: block;
     width: 1050px;
-    min-height: 527px;
+  }
+
+  .video__wrapper {
+    position: relative;
+    padding-top: 47px;
+    padding-left: 718px;
+    padding-bottom: 60px;
   }
 
   .video__player-wrapper {
-    float: left;
+    position: absolute;
     width: 682px;
+    top: 0;
+    left: 0;
   }
 
   .video__title {
-    float: right;
     max-width: 226px;
-    padding-top: 97px;
-    padding-left: 0;
+    padding-top: 47px;
+    padding-left: 10px;
     padding-right: 63px;
     margin-bottom: 33px;
   }

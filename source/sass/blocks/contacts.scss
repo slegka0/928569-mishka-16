@@ -100,7 +100,6 @@
   .contacts {
     padding-top: 63px;
     padding-bottom: 55px;
-    margin-bottom: 2px;
   }
 
   .contacts__e-mail::after {
@@ -117,11 +116,24 @@
   }
 
   .contacts__title {
+    position: relative;
     margin-left: -5px;
     margin-bottom: 50px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .contacts__title::after {
+    content: "";
+
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 70px;
+    height: 100px;
+    background-image: url("../../img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
 
   .contacts__list {
@@ -144,8 +156,7 @@
   }
 
   .contacts__image {
-    width: 100%;
-    height: 457px;
+    width: 768px;
     margin-bottom: 55px;
   }
 }
@@ -160,6 +171,7 @@
     padding-right: 50px;
     padding-bottom: 50px;
     margin: 0 auto;
+    margin-bottom: 54px;
   }
 
   .contacts__e-mail::after {
@@ -187,14 +199,20 @@
     line-height: 57px;
   }
 
+  .contacts__title::after {
+    top: -5px;
+    left: -107px;
+  }
+
   .contacts__image {
     width: 525px;
     margin-top: 15px;
+    margin-bottom: 0;
   }
 
   .contacts__button {
     position: absolute;
-    bottom: 104px;
+    bottom: 52px;
     margin: 0;
     width: 226px;
     letter-spacing: 0.1px;
