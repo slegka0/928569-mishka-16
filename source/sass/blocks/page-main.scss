@@ -6,8 +6,8 @@
 
 .page-main__title {
   position: relative;
-  @include kill-indents();
 
+  @include kill-indents();
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
