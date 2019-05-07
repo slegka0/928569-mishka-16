@@ -1,13 +1,16 @@
 @import "variables.scss";
 @import "base.scss";
-@import "button.scss";
-@import "page-header.scss";
-@import "page-main.scss";
-@import "overview.scss";
-@import "about-us.scss";
-@import "best-goods.scss";
-@import "page-footer.scss";
-@import "footer-social.scss";
-@import "products.scss";
-
-
+@import "blocks/site-navigation.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/overview.scss";
+@import "blocks/about-us.scss";
+@import "blocks/best-goods.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/footer-social.scss";
+@import "blocks/products.scss";
+@import "blocks/video.scss";
+@import "blocks/order.scss";
+@import "blocks/feedbacks.scss";
+@import "blocks/contacts.scss";
