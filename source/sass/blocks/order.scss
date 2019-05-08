@@ -263,6 +263,8 @@ input[type="checkbox"]:active + .checkbox-inditicator {
   }
 
   .order__text {
+    order: 2;
+    margin-top: 7px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -412,11 +414,6 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     padding-right: 50px;
     display: flex;
     justify-content: space-between;
-  }
-
-  .order__text {
-    order: 2;
-    margin-top: 7px;
   }
 }
 
