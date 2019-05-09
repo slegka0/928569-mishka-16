@@ -419,6 +419,81 @@ input[type="checkbox"]:active + .checkbox-inditicator {
 
 @media (min-width: $desktop-width) {
   .order {
-    width: 1050px;
+    width: 1150px;
+  }
+
+  .order__fieldset {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 68px;
+
+    &--gray {
+      padding-bottom: 12px;
+    }
+
+    &--main {
+      padding-bottom: 50px;
+    }
+  }
+
+  .order__fieldset-wrapper {
+    padding-left: 50px;
+  }
+
+  .order__legend {
+    width: 111px;
+    padding: 0;
+    padding-top: 2px;
+    padding-left: 64px;
+    margin-right: 0;
+  }
+
+  .order__list {
+    &--check {
+      width: 760px;
+    }
+  }
+
+  .order__item {
+    &--check {
+      margin-right: 30px;
+    }
+
+    &--check:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &--check:nth-child(even) {
+      margin-right: 30px;
+    }
+
+    &--check:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .order__label {
+    max-width: 700px;
+  }
+
+  .order__fieldset--main .order__input-text {
+    padding-left: 18px;
+    padding-right: 0;
+    width: 682px;
+  }
+
+  .order__label--names {
+    margin-left: 17px;
+  }
+
+  .order__textarea {
+    margin-left: 2px;
+    width: 672px;
+  }
+
+  .order__footer {
+    padding: 0;
+    margin: 0 auto;
+    width: 700px;
   }
 }
