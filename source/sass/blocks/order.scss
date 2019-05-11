@@ -97,6 +97,7 @@
 }
 
 .order__input-text {
+  width: 260px;
   margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 16px;
@@ -415,6 +416,16 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     display: flex;
     justify-content: space-between;
   }
+
+  .order__input-icon {
+    bottom: 59px;
+    right: 72px;
+
+    &--tel {
+      bottom: 19px;
+      right: 77px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -433,6 +444,14 @@ input[type="checkbox"]:active + .checkbox-inditicator {
 
     &--main {
       padding-bottom: 50px;
+    }
+
+    &--tel {
+      padding-bottom: 0;
+    }
+
+    &--extand {
+      padding-bottom: 45px;
     }
   }
 
@@ -495,5 +514,17 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     padding: 0;
     margin: 0 auto;
     width: 700px;
+  }
+
+  .order__fieldset--gray .order__input-text {
+    margin-left: 2px;
+  }
+
+  .order__input-icon {
+    right: 229px;
+
+    &--tel {
+      right: 232px;
+    }
   }
 }

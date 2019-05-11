@@ -1,0 +1,128 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  transform: translate(-50%, -50%);
+}
+
+.modal__title {
+  @include kill-indents();
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal__form fieldset {
+  @include kill-indents();
+  border: none;
+}
+
+.modal__text {
+  @include kill-indents();
+  margin-bottom: 23px;
+
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: $dark-gray;
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.modal__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark-gray;
+  cursor: pointer;
+}
+
+.modal__submit {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__input-text {
+  @include kill-indents();
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 78px;
+  border: 2px solid #ececec;
+}
+
+.modal__input:checked + .modal__input-text {
+  border-color: #62d1ba;
+}
+
+.modal__input:hover + .modal__input-text {
+  border-color: #c7c7c7;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 354px;
+    padding-top: 33px;
+    padding-left: 106px;
+    padding-right: 106px;
+    border: 1px solid #c7c7c7;
+  }
+
+  .modal__title {
+    width: 360px;
+    margin-bottom: 13px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__text {
+    margin-bottom: 22px;
+    font-size: 17px;
+  }
+
+  .modal__input-text {
+    width: 108px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

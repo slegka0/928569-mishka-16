@@ -215,6 +215,29 @@
         </picture>
         <a class="button contacts__button" href="#">напишите нам</a>
       </section>
+      <section class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <div class="modal__buttons">
+              <label class="modal__label">
+                <input type="radio" name="size" value="S-size" class="visually-hidden modal__input" checked>
+                <p class="modal__input-text">s</p>
+              </label>
+              <label class="modal__label">
+                <input type="radio" name="size" value="M-size" class="visually-hidden modal__input">
+                <p class="modal__input-text">m</p>
+              </label>
+              <label class="modal__label">
+                <input type="radio" name="size" value="L-size" class="visually-hidden modal__input">
+                <p class="modal__input-text">l</p>
+              </label>
+            </div>
+            <button type="submit" class="modal__submit">Добавить</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
