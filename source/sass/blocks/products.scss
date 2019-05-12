@@ -106,6 +106,10 @@
   background-color: #ececec;
 }
 
+.products__image {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .products {
     min-width: 668px;
@@ -145,8 +149,8 @@
   .products__footer-wrapper {
     flex-direction: row;
     padding-top: 26px;
-    padding-bottom: 23px;
-    padding-left: 6px;
+    padding-bottom: 26px;
+    padding-left: 5px;
     padding-right: 3px;
   }
 
