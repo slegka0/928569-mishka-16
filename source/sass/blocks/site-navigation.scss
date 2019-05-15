@@ -178,7 +178,6 @@
   .site-navigation__search-text {
     display: none;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -224,16 +223,13 @@
 
     &--user {
       margin-left: auto;
+      justify-content: flex-end;
     }
 
     &--new {
       display: flex;
       flex-wrap: wrap;
     }
-  }
-
-  .site-navigation__list--user {
-    justify-content: flex-end;
   }
 
   .site-navigation__list--new .site-navigation__link {
