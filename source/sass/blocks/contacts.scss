@@ -56,10 +56,25 @@
   font-style: normal;
 }
 
-.contacts__image {
+.contacts__map {
+  width: 320px;
+  position: relative;
   display: block;
   margin: 0 auto;
   margin-bottom: 37px;
+}
+
+.contacts__google {
+  display: block;
+  width: 100%;
+}
+
+.contacts__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .contacts__button {
@@ -155,7 +170,7 @@
     width: 230px;
   }
 
-  .contacts__image {
+  .contacts__map {
     width: 768px;
     margin-bottom: 55px;
   }
@@ -204,7 +219,7 @@
     left: -107px;
   }
 
-  .contacts__image {
+  .contacts__map {
     width: 525px;
     margin-top: 15px;
     margin-bottom: 0;
