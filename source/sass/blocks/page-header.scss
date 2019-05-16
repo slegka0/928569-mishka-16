@@ -7,15 +7,13 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-width: 668px;
+    min-width: 768px;
     padding: 0;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    min-width: 1050px;
+    min-width: 1150px;
   }
 }

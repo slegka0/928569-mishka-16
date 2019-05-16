@@ -51,8 +51,7 @@
   position: absolute;
   top: 31px;
   left: 31px;
-
-  fill: rgba(35, 31, 32, 0.2);
+  opacity: 0.2;
 }
 
 .site-navigation__delivery {
@@ -79,8 +78,7 @@
 
   border-top: 1px solid #ececec;
 
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 0.6;
     outline: none;
   }
@@ -88,6 +86,23 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.site-navigation__list--user .site-navigation__link:hover {
+  opacity: 1;
+  color: #666666;
+}
+
+.site-navigation__list--user .site-navigation__link:active {
+  opacity: 0.3;
+}
+
+.site-navigation__link:hover path {
+  opacity: 1;
+  fill: #63d1bb;
+}
+.site-navigation__link:hover .site-navigation__icon {
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -106,7 +121,7 @@
   .site-navigation__logo {
     margin: 0;
     margin-right: auto;
-    margin-left: -3px;
+    margin-left: 47px;
     padding-top: 21px;
 
     order: -2;
@@ -116,6 +131,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 350px;
+    padding-right: 50px;
 
     order: -1;
   }
@@ -136,7 +152,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 336px;
+    padding-left: 50px;
     margin-right: auto;
+    border-top: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+  }
+
+  .site-navigation--page .site-navigation__list--site {
+    background-color: #f1f1f1;
   }
 
   .site-navigation__list--new {
@@ -145,12 +168,19 @@
 
   .site-navigation__delivery {
     display: block;
-    width: 264px;
+    width: 332px;
     margin-left: auto;
     padding-top: 17px;
+    padding-right: 50px;
     font-size: 15px;
 
     text-align: right;
+    border-top: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+  }
+
+  .site-navigation--page .site-navigation__delivery {
+    background-color: #f1f1f1;
   }
 
   .site-navigation__icon--search {
@@ -191,6 +221,11 @@
     height: 72px;
   }
 
+  .site-navigation__list--site {
+    background: transparent;
+    border-top: none;
+  }
+
   .site-navigation__list--site .site-navigation__link {
     padding-top: 31px;
     padding-right: 0;
@@ -229,7 +264,15 @@
     &--new {
       display: flex;
       flex-wrap: wrap;
+      padding-left: 50px;
+      width: 718px;
+      background-color: #f9f9f9;
+      border-top: 1px solid #e7e7e7;
     }
+  }
+
+  .site-navigation--page .site-navigation__list--new {
+    background-color: #f1f1f1;
   }
 
   .site-navigation__list--new .site-navigation__link {
@@ -240,6 +283,11 @@
 
     font-size: 15px;
     line-height: 24px;
+    border-top: none;
+  }
+
+  .site-navigation--page .site-navigation__list--site {
+    background-color: transparent;
   }
 
   .site-navigation__list--new .site-navigation__link--last-child {
