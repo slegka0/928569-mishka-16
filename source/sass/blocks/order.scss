@@ -125,6 +125,7 @@
   word-spacing: -3px;
   border: 2px solid $dark-gray;
   resize: none;
+  overflow: auto;
 }
 
 .order__text {
@@ -294,7 +295,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
       padding-top: 38px;
     }
 
-    &--extand {
+    &--extend {
       padding-top: 32px;
     }
   }
@@ -363,7 +364,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
       margin-right: 27px;
     }
 
-    &--extand {
+    &--extend {
       margin-top: 33px;
     }
   }
@@ -450,7 +451,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
       padding-bottom: 0;
     }
 
-    &--extand {
+    &--extend {
       padding-bottom: 45px;
     }
   }

@@ -29,18 +29,6 @@
 .site-navigation__list {
   @include kill-indents();
   list-style: none;
-  /*
-  &--site {
-    display: none;
-  }
-
-  &--new {
-    display: none;
-  }
-
-  &--user {
-    display: none;
-  }*/
 }
 
 .site-navigation__list--new {
@@ -60,8 +48,15 @@
 
 .site-navigation__button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 30px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 }
 
 .site-navigation__link {
@@ -106,6 +101,37 @@
   opacity: 1;
 }
 
+@media (max-width: $mobile-width-only) {
+
+  .site-navigation--opened .site-navigation__list {
+    display: block;
+
+    &--new {
+      display: none;
+    }
+  }
+
+  .site-navigation--opened .site-navigation__button {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+
+  .site-navigation--closed .site-navigation__list {
+    display: none;
+  }
+
+  .site-navigation--nojs .site-navigation__button {
+    display: none;
+  }
+
+  .site-navigation--nojs .site-navigation__list {
+    display: block;
+
+    &--new {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-navigation {
     width: auto;
@@ -126,6 +152,10 @@
     padding-top: 21px;
 
     order: -2;
+  }
+
+  .site-navigation__button {
+    display: none;
   }
 
   .site-navigation__list--user {
