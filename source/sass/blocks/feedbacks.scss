@@ -18,7 +18,7 @@
   bottom: -53px;
   background-repeat: repeat no-repeat;
   background-size: contain;
-  background-image: url("../../img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
 }
 
 
@@ -104,11 +104,11 @@
     padding-bottom: 17px;
     margin-bottom: 81px;
 
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
     }
   }
 
