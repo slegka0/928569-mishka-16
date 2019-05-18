@@ -50,12 +50,25 @@
   color: #63d1bb;
 
   &--names {
-    margin-bottom: 27px;
+    margin-top: -4px;
+    margin-bottom: 30px;
   }
 
   &--add-info {
     margin-bottom: 7px;
   }
+}
+
+.order__fieldset input::placeholder {
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  word-spacing: -1.5px;
+  color: 444444;
+  opacity: 0.3;
+}
+
+.order__fieldset textarea::placeholder {
+  opacity: 0.3;
 }
 
 .order__legend::after {
@@ -357,6 +370,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     width: 160px;
 
     &--names {
+      padding-top: 7px;
       margin-right: 44px;
     }
 
@@ -427,6 +441,12 @@ input[type="checkbox"]:active + .checkbox-inditicator {
       right: 77px;
     }
   }
+
+  .order__fieldset textarea::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {

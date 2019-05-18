@@ -13,7 +13,7 @@
   font-weight: 700;
   text-align: center;
 
-  padding: 73px 0 74px 0;
+  padding: 70px 0 77px 0;
   background-color: #f1f1f1;
 }
 
@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .page-main {
     &--catalog {
-      margin-bottom: 61px;
+      margin-bottom: 65px;
     }
   }
 
@@ -69,6 +69,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  .page-main__title::after {
+    bottom: -1px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -79,6 +83,7 @@
   }
 
   .page-main__title::after {
+    bottom: 0;
     height: 32px;
   }
 
