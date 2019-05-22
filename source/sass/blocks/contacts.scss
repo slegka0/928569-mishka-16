@@ -57,7 +57,7 @@
 }
 
 .contacts__map {
-  width: 320px;
+  min-width: 320px;
   position: relative;
   display: block;
   margin: 0 auto;
@@ -220,6 +220,7 @@
   }
 
   .contacts__map {
+    min-width: 525px;
     width: 525px;
     margin-top: 15px;
     margin-bottom: 0;

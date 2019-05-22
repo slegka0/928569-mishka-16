@@ -73,6 +73,10 @@
   }
 }
 
+.products__link svg {
+  overflow: hidden;
+}
+
 .products__link:hover path {
   fill: #63d1bb;
 }

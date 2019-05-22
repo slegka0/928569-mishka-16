@@ -3,12 +3,14 @@
 }
 
 .footer-social__list {
+  @include kill-indents();
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
+  width: 150px;
 
-  @include kill-indents();
   list-style: none;
 }
 
