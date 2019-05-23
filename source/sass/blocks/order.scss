@@ -25,7 +25,6 @@
 
 .order__fieldset {
   @include kill-indents();
-  position: relative;
   margin-bottom: 45px;
   border: none;
 
@@ -36,6 +35,10 @@
   &--last-child {
     margin-bottom: 7px;
   }
+}
+
+.order__fieldset-wrapper {
+  position: relative;
 }
 
 .order__fieldset--tel .order__input-text::placeholder {
@@ -255,7 +258,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
 
 @media (min-width: $tablet-width) {
   .order {
-    width: 768px;
+    min-width: 100%;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 33px;
@@ -294,15 +297,26 @@ input[type="checkbox"]:active + .checkbox-inditicator {
   }
 
   .order__fieldset {
+    width: 100%;
+    margin-bottom: 0;
+
+    &--gray {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .order__fieldset-wrapper {
+    width: 668px;
+    display: flex;
     padding-top: 63px;
     padding-bottom: 69px;
     padding-left: 50px;
     padding-right: 50px;
+    margin: 0 auto;
     margin-bottom: 0;
 
     &--gray {
       padding-top: 66px;
-      background-color: #f1f1f1;
     }
 
     &--main {
@@ -310,20 +324,19 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     }
 
     &--tel {
-      padding-bottom: 0;
+      padding-top: 66px;
+      padding-bottom: 20px;
     }
 
     &--email {
-      padding-top: 38px;
+      padding-top: 20px;
+      padding-bottom: 50px;
     }
 
     &--extend {
       padding-top: 32px;
+      padding-bottom: 49px;
     }
-  }
-
-  .order__fieldset-wrapper {
-    display: flex;
   }
 
   .order__list {
@@ -341,7 +354,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
   }
 
   .order__item {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
 
     &--check:nth-child(odd) {
       margin-right: 29px;
@@ -379,7 +392,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     width: 160px;
 
     &--names {
-      padding-top: 7px;
+      padding-top: 5px;
       margin-right: 44px;
     }
 
@@ -435,6 +448,8 @@ input[type="checkbox"]:active + .checkbox-inditicator {
   }
 
   .order__footer {
+    width: 668px;
+    margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
@@ -446,7 +461,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     right: 72px;
 
     &--tel {
-      bottom: 19px;
+      bottom: 37px;
       right: 77px;
     }
   }
@@ -459,14 +474,19 @@ input[type="checkbox"]:active + .checkbox-inditicator {
 
 @media (min-width: $desktop-width) {
   .order {
-    width: 1150px;
     padding-bottom: 31px;
   }
 
-  .order__fieldset {
+  .order__fieldset-wrapper {
+    width: 1050px;
+
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 68px;
+
+    &--check {
+      padding-bottom: 12px;
+    }
 
     &--gray {
       padding-bottom: 12px;
@@ -477,16 +497,16 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     }
 
     &--tel {
-      padding-bottom: 0;
+      padding-bottom: 20px;
+    }
+
+    &--email {
+      padding-bottom: 50px;
     }
 
     &--extend {
-      padding-bottom: 45px;
+      padding-bottom: 42px;
     }
-  }
-
-  .order__fieldset-wrapper {
-    padding-left: 50px;
   }
 
   .order__legend {
@@ -495,6 +515,10 @@ input[type="checkbox"]:active + .checkbox-inditicator {
     padding-top: 2px;
     padding-left: 64px;
     margin-right: 0;
+
+    &--names {
+      padding-top: 8px;
+    }
   }
 
   .order__list {
@@ -556,10 +580,10 @@ input[type="checkbox"]:active + .checkbox-inditicator {
   }
 
   .order__input-icon {
-    right: 229px;
+    right: 179px;
 
     &--tel {
-      right: 232px;
+      right: 182px;
     }
   }
 }
