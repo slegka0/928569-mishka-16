@@ -460,6 +460,7 @@ input[type="checkbox"]:active + .checkbox-inditicator {
 @media (min-width: $desktop-width) {
   .order {
     width: 1150px;
+    padding-bottom: 31px;
   }
 
   .order__fieldset {

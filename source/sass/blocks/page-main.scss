@@ -1,5 +1,6 @@
 .page-main {
   &--catalog {
+    display: block;
     margin-bottom: 59px;
   }
 }
@@ -38,7 +39,7 @@
   }
 
   .page-main__title {
-    width: 768px;
+
     margin: 0 auto;
     font-size: 43px;
     line-height: 50px;
@@ -84,7 +85,6 @@
   }
 
   .page-main__title {
-    width: 1150px;
     font-size: 53px;
     line-height: 57px;
     padding-top: 24px;
