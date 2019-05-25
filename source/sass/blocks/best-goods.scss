@@ -8,20 +8,6 @@
   color: $dark-gray;
 }
 
-.best-goods::after {
-  position: absolute;
-  content: "";
-
-  @include kill-indents();
-  width: 320px;
-  height: 6px;
-  left: 0;
-  bottom: -28px;
-  background-repeat: repeat no-repeat;
-  background-size: contain;
-  background-image: url("../img/bg-zigzag-line.svg");
-}
-
 .best-goods__title {
   @include kill-indents();
   margin-bottom: 5px;
@@ -106,12 +92,6 @@
     margin-bottom: 44px;
   }
 
-  .best-goods::after {
-    height: 15px;
-    width: 100%;
-    background-size: contain;
-  }
-
   .best-goods__label {
     line-height: 17px;
     align-self: center;
@@ -187,6 +167,21 @@
     margin-bottom: 82px;
   }
 
+  .best-goods::after {
+    position: absolute;
+
+    content: "";
+    width: 1050px;
+    bottom: -56px;
+    left: 50px;
+    height: 23px;
+    background-size: contain;
+    transform: rotate(180deg);
+    background-repeat: repeat no-repeat;
+    background-size: contain;
+    background-image: url("../img/bg-zigzag-line.svg");
+  }
+
   .best-goods__title {
     font-size: 53px;
     line-height: 57px;
@@ -235,14 +230,5 @@
   .best-goods__right-wrapper {
     margin-top: -2px;
     width: 525px;
-  }
-
-  .best-goods::after {
-    bottom: -55px;
-    height: 23px;
-    width: 1050px;
-    margin: 0 50px;
-    background-size: contain;
-    transform: rotate(180deg);
   }
 }

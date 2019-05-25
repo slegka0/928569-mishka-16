@@ -1,5 +1,9 @@
 .feedbacks {
   position: relative;
+  width: 100%;
+}
+
+.feedbacks__main-wrapper {
   width: 260px;
   margin: 0 auto;
   padding-left: 30px;
@@ -12,7 +16,7 @@
   content: "";
 
   @include kill-indents();
-  width: 320px;
+  width: 100%;
   height: 6px;
   left: 0;
   bottom: -53px;
@@ -93,7 +97,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feedbacks {
+  .feedbacks__main-wrapper {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +169,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .feedbacks {
+  .feedbacks__main-wrapper {
     width: 875px;
     padding-top: 71px;
     padding-left: 225px;
@@ -175,12 +179,7 @@
   }
 
   .feedbacks::after {
-    bottom: -89px;
-    height: 23px;
-    width: 1050px;
-    margin: 0 50px;
-    background-size: contain;
-    transform: rotate(180deg);
+    display: none;
   }
 
   .feedbacks__title {
@@ -209,5 +208,20 @@
 
   .feedbacks__e-mail {
     max-width: 700px;
+  }
+
+  .feedbacks__main-wrapper::after {
+    position: absolute;
+
+    content: "";
+    left: 50px;
+    bottom: -88px;
+    height: 23px;
+    width: 1050px;
+    background-size: contain;
+    transform: rotate(180deg);
+    background-repeat: repeat no-repeat;
+    background-size: contain;
+    background-image: url("../img/bg-zigzag-line.svg");
   }
 }

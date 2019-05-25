@@ -1,10 +1,11 @@
 .overview {
   background-color: #fafafa;
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .overview__wrapper {
+  width: 320px;
+  margin: 0 auto;
   min-height: 209px;
   padding-top: 72px;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -88,6 +89,8 @@
 }
 
 .overview__link-wrapper {
+  width: 320px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -96,9 +99,12 @@
 @media (min-width: $tablet-width) {
   .overview__wrapper {
     min-height: 472px;
+    min-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 77px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: 172%;
+    background-size: 150%;
     background-position: center -77px;
     background-repeat: no-repeat;
 
@@ -108,6 +114,9 @@
   }
 
   .overview__link-wrapper {
+    min-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
     flex-direction: row;
   }
 
@@ -131,10 +140,9 @@
   }
 
   .overview {
+    padding-top: 77px;
     position: relative;
-    min-width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
+    border-top: 1px solid #ececec;
   }
 
   .overview::after {
@@ -165,11 +173,12 @@
   }
 
   .overview__wrapper {
+    min-width: 1050px;
     min-height: 473px;
     padding-top: 82px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center -73px;
-    background-size: 110%;
+    background-size: 100%;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -177,10 +186,9 @@
   }
 
   .overview {
-    min-width: 1050px;
+    padding-top: 70px;
     margin-bottom: 55px;
     padding-bottom: 15px;
-    overflow: hidden;
   }
 
   .overview__link {
@@ -189,6 +197,10 @@
 
   .overview__text {
     width: 130px;
+  }
+
+  .overview__link-wrapper {
+    min-width: 1050px;
   }
 
   .overview::after {

@@ -1,12 +1,29 @@
 .about-us {
-  width: 260px;
+  position: relative;
   margin: 0 auto;
   padding: 30px;
   padding-top: 35px;
   margin-bottom: 6px;
 }
 
+.about-us::before {
+  position: absolute;
+  content: "";
+
+  @include kill-indents();
+  width: 100%;
+  height: 6px;
+  left: 0;
+  top: 22px;
+  background-repeat: repeat no-repeat;
+  background-size: contain;
+  background-image: url("../img/bg-zigzag-line.svg");
+}
+
 .about-us__title {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -17,6 +34,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto;
   list-style: none;
 }
 
@@ -79,7 +98,6 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    min-width: 668px;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 9px;
@@ -87,14 +105,25 @@
 
   .about-us__title {
     @include kill-indents();
+    min-width: 668px;
     margin-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 43px;
     line-height: 50px;
     letter-spacing: -1px;
     word-spacing: 2px;
   }
 
+  .about-us::before {
+    top: -31px;
+    height: 15px;
+    width: 100%;
+    background-size: contain;
+  }
+
   .about-us__list {
+    width: 668px;
     flex-direction: row;
   }
 
@@ -136,15 +165,23 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    width: 700px;
-    padding-top: 33px;
+    padding-top: 35px;
     padding-right: 175px;
     padding-left: 175px;
     margin-bottom: 15px;
   }
 
   .about-us__title {
+    width: 700px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__list {
+    width: 700px;
+  }
+
+  .about-us::before {
+    display: none;
   }
 }
