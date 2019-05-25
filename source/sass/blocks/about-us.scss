@@ -40,8 +40,10 @@
 }
 
 .about-us__item {
+  position: relative;
+
   @include kill-indents();
-  padding-top: 10px;
+  padding-top: 65px;
   margin-bottom: 18px;
 
   line-height: 20px;
@@ -52,48 +54,58 @@
   }
 }
 
-.about-us__text {
-  @include kill-indents();
-  margin-top: 13px;
+.about-us__item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
-.about-us__item svg {
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 12px;
+.about-us__item--flower::before {
+  top: 8px;
+  left: 8px;
+
+  background-image: url("../img/icon-feature-flower.svg");
 }
 
-.about-us__item path {
-  fill: #63d1bb;
+.about-us__item--money::before {
+  top: 10px;
+  left: 0;
+
+  background-image: url("../img/icon-feature-money.svg");
 }
 
-.about-us__item--flower svg {
+.about-us__item--heart::before {
+  top: 15px;
   left: 7px;
-  margin-bottom: 0;
+
+  background-image: url("../img/icon-feature-heart.svg");
 }
 
-.about-us__item--heart svg {
-  top: 6px;
-  left: 6px;
-  margin-bottom: 10px;
-}
-
-.about-us__item--clew svg {
-  top: 2px;
-  left: 2px;
-  margin-bottom: 4px;
-}
-
-.about-us__item--rocket svg {
-  top: 3px;
-  left: -5px;
-  margin-bottom: 13px;
-}
-
-.about-us__item--gift svg {
-  top: 3px;
+.about-us__item--clew::before {
+  top: 12px;
   left: 3px;
-  margin-bottom: 7px;
+
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.about-us__item--rocket::before {
+  top: 14px;
+  left: -6px;
+
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.about-us__item--gift::before {
+  top: 10px;
+  left: 3px;
+
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {

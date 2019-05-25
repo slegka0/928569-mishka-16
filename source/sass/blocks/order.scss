@@ -8,6 +8,7 @@
 
 .order__label {
   position: relative;
+  z-index: 3;
   display: block;
   padding-left: 63px;
 
@@ -148,6 +149,15 @@
   overflow: auto;
 }
 
+.order__textarea:hover {
+  border-color: #62d1ba;
+}
+
+.order__textarea:focus {
+  border-color: #62d1ba;
+  outline: none;
+}
+
 .order__text {
   @include kill-indents();
   margin-bottom: 30px;
@@ -254,6 +264,14 @@ input[type="checkbox"]:active + .checkbox-inditicator {
 
 .order__input-text:hover + .order__input-icon path {
   fill: #62d1ba;
+}
+
+.order__input-text:focus + .order__input-icon path {
+  fill: #62d1ba;
+}
+
+.order__input-text:focus + .order__input-icon {
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {

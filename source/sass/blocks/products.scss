@@ -16,6 +16,7 @@
 .products__item {
   @include kill-indents();
   margin-bottom: 30px;
+  z-index: 3;
 
   &--last-child {
     margin-bottom: 0;

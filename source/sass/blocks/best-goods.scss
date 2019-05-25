@@ -176,10 +176,9 @@
     left: 50px;
     height: 23px;
     background-size: contain;
-    transform: rotate(180deg);
     background-repeat: repeat no-repeat;
-    background-size: contain;
     background-image: url("../img/bg-zigzag-line.svg");
+    transform: rotate(180deg);
   }
 
   .best-goods__title {

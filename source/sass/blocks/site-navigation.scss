@@ -1,6 +1,6 @@
 .site-navigation {
   position: relative;
-  z-index: 1;
+
   width: 100%;
 }
 
@@ -31,6 +31,10 @@
   list-style: none;
 }
 
+.site-navigation__item {
+  z-index: 1;
+}
+
 .site-navigation__list--new {
   display: none;
 }
@@ -44,6 +48,7 @@
 
 .site-navigation__delivery {
   display: none;
+  z-index: 1;
 }
 
 .site-navigation__button {
@@ -181,7 +186,7 @@
 
   .site-navigation__list--site {
     position: static;
-    z-index: 2;
+
     margin-bottom: -100%;
     display: flex;
     flex-wrap: wrap;
@@ -192,15 +197,12 @@
     background-color: transparent;
   }
 
-
-
   .site-navigation__list--new {
     display: none;
   }
 
   .site-navigation__delivery {
     position: static;
-    z-index: 2;
     display: block;
     width: 332px;
     margin-left: auto;
