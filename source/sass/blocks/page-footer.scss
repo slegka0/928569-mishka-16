@@ -53,17 +53,14 @@
 
 .page-footer__image {
   margin-top: 5px;
-}
-
-.page-footer__image path {
   fill: #63d1bb;
 }
 
-.page-footer__link:hover path {
+.page-footer__link:hover svg {
   fill: #46c1ae;
 }
 
-.page-footer__logo-link:hover path {
+.page-footer__logo-link:hover svg {
   fill: #46c1ae;
 }
 

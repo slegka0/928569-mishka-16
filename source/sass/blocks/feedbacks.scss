@@ -92,10 +92,6 @@
   }
 }
 
-.feedbacks__button--right svg {
-  transform: rotate(180deg);
-}
-
 @media (min-width: $tablet-width) {
   .feedbacks__main-wrapper {
     position: relative;

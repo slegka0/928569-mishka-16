@@ -148,6 +148,10 @@
     }
   }
 
+  .overview__link:hover {
+    transform: translateY(-5px);
+  }
+
   .overview__title {
     max-width: 500px;
     font-size: 43px;
