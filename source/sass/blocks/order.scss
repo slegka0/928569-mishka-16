@@ -260,18 +260,12 @@ input[type="checkbox"]:active + .checkbox-inditicator {
 
 .order__input-text:hover + .order__input-icon {
   opacity: 1;
-}
-
-.order__input-text:hover + .order__input-icon {
-  fill: #62d1ba;
-}
-
-.order__input-text:focus + .order__input-icon {
   fill: #62d1ba;
 }
 
 .order__input-text:focus + .order__input-icon {
   opacity: 1;
+  fill: #62d1ba;
 }
 
 @media (min-width: $tablet-width) {
