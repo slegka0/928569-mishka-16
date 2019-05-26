@@ -29,6 +29,16 @@
   text-align: center;
 }
 
+.overview__link-wrapper {
+  z-index: 2;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .overview__link {
   position: relative;
   display: flex;
@@ -45,7 +55,6 @@
 
   &--luster {
     background-color: #63d1bb;
-    padding-right: 35px;
   }
 
   &--toys {
@@ -99,16 +108,7 @@
 }
 
 .overview__text {
-  width: 50%;
-}
-
-.overview__link-wrapper {
-  z-index: 2;
-  width: 320px;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  width: 100px;
 }
 
 @media (min-width: $tablet-width) {
@@ -129,7 +129,7 @@
   }
 
   .overview__link-wrapper {
-    min-width: 668px;
+    width: 668px;
     padding-left: 50px;
     padding-right: 50px;
     flex-direction: row;
@@ -184,6 +184,10 @@
     top: 31px;
     right: 32px;
   }
+
+  .overview__text {
+    width: 50%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -221,11 +225,11 @@
   }
 
   .overview__link-wrapper {
-    min-width: 1050px;
+    width: 1050px;
   }
 
   .overview::after {
-    width: 112%;
+    width: 100%;
     height: 38px;
   }
 }
