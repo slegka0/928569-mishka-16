@@ -171,7 +171,8 @@
   }
 
   .contacts__map {
-    width: 768px;
+    width: 100%;
+    min-width: 768px;
     margin-bottom: 55px;
   }
 }

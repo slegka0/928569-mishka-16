@@ -104,6 +104,10 @@
   border-color: #62d1ba;
 }
 
+.modal__input:active + .modal__input-text {
+  border-color: #62d1ba;
+}
+
 @media (min-width: $tablet-width) {
   .modal {
     width: 354px;
